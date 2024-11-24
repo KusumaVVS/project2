@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - K.Aasritha Vardhan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .register-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .register-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0077b5;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #0077b5;
+            box-shadow: 0 0 5px rgba(0, 119, 181, 0.5);
+            outline: none;
+        }
+
+        button[type="submit"] {
+            background-color: #0077b5;
+            color: white;
+            padding: 14px;
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #005c8a;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .footer-links a {
+            color: #0077b5;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 30px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            color: #0077b5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .navbar a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #555;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .navbar a:hover {
+            color: #0077b5;
+        }
+
+        footer {
+            background-color: #f3f6f8;
+            padding: 40px 0;
+            text-align: center;
+            color: #777;
+        }
+
+        footer .grid {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px;
+            margin-bottom: 30px;
+        }
+
+        footer .box {
+            flex: 1;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        footer .box h3 {
+            font-size: 18px;
+            color: #0077b5;
+            margin-bottom: 10px;
+        }
+
+        footer .box a {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 8px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        footer .box a:hover {
+            color: #0077b5;
+        }
+
+        footer .credit {
+            font-size: 14px;
+            color: #aaa;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="home.html" class="logo"><i class="fas fa-briefcase"></i>Open Source Job Portal by K.Aasritha Vardhan </a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="jobs.html">Job Preferences</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Log In</a>
+        </nav>
+    </header>
+
+    <div class="register-container">
+        <div class="logo">Open Source Job Portal By K.Aasritha Vardhan </div>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+
+            <button type="submit">Join Now</button>
+
+            <div class="footer-links">
+                <p>By joining, you agree to the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>.</p>
+                <p>Already have an account? <a href="login.html">Log In</a></p>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <section class="grid">
+            <div class="box">
+                <h3>Quick Links </h3>
+                <a href="home.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="aboutus.html"><i class="fas fa-angle-right"></i>About Us</a>
+                <a href="jobs.html"><i class="fas fa-angle-right"></i>Job Preferences</a>
+                <a href="contact.html"><i class="fas fa-angle-right"></i>Contact Us</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links </h3>
+                <a href="#"><i class="fas fa-angle-right"></i>Account</a>
+                <a href="login.html"><i class="fas fa-angle-right"></i>Log In</a>
+                <a href="register.html"><i class="fas fa-angle-right"></i>Register</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Post Job</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Dash-Board</a>
+            </div>
+
+            <div class="box">
+                <h3> Follow Us </h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a href="#"><i class="fas fa-phone"></i>Phone</a>
+                <a href="#"><i class="fas fa-envelope"></i>Email</a>
+            </div>
+        </section>
+        <div class="credit">&copy; copyright@2024 by <span>K.Aasritha Vardhan</span> | All rights reserved!</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
